@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+html {}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(45deg, #d6d6d6 25%, #f0f0f0 25%, #f0f0f0 50%, #d6d6d6 50%, #d6d6d6 75%, #f0f0f0 75%, #f0f0f0 100%);
+    background-size: 5.66px 5.66px;
+}
+
+.message-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-wrapper:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+.message {
+    padding: 10px 20px;
+    background-color: rgb(221 221 221);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+    max-width: 360px;
+    width: fit-content;
+    font-size: 18px;
+}
+
+.owned-message {
+    background: linear-gradient(100deg, rgba(212, 186, 255, 1) 0%, rgba(223, 223, 223, 1) 100%);
+    align-self: flex-end;
+}
+
+.message-author {
+    color: #686868;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.system-message {
+    text-align: center;
+    color: #8F8F8F;
+}
+
+.button {
+    padding: 7px 15px;
+    background: rgb(212, 186, 255);
+    border-radius: 16px;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+    }
+}
+
+.input {
+    border-color: #d5b4ff;
+    background: #f5f5f5;
+    border-radius: 15px;
+    width: 600px;
+    margin: 0px 15px;
+    padding: 0px 10px;
+
+    &:hover,
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+    }
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+    height: 18px;
+
+}
